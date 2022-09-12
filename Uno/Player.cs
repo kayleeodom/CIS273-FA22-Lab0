@@ -15,11 +15,18 @@ namespace Uno
 
         public bool HasPlayableCard(Card card)
 		{
-			return false;
+			//foreach
+			if (Hand == null)
+				return false;
+			return true;
 		}
 
         public Card GetFirstPlayableCard(Card card)
 		{
+			/*if (HasPlayableCard(card))
+			{
+				return null;
+			}*/
 			return new Card();
 		}
 
